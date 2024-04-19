@@ -30,7 +30,7 @@ public class Task {
                 Pattern detectRole = Pattern.compile(roles[i]);
                 Matcher detecter = detectRole.matcher(textLines[j]);
                 if (detecter.find()){
-                    result[numberOfLine]=j+1+") "+textLines[j].substring(roles[i].length())+"\n";
+                    result[numberOfLine]=j+1+") "+textLines[j].substring(roles[i].length()+2)+"\n";
                     numberOfLine++;
                 }
             }
