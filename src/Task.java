@@ -24,7 +24,7 @@ public class Task {
         String[] result = new String[roles.length + textLines.length];
         int numberOfLine=0;
         for (int i = 0; i < roles.length; i++) {
-            result[numberOfLine]=roles[i]+"\n";
+            result[numberOfLine]=roles[i]+":"+"\n";
             numberOfLine++;
             for(int j=0; j<textLines.length; j++){
                 Pattern detectRole = Pattern.compile(roles[i]);
